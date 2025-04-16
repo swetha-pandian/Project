@@ -69,7 +69,7 @@ class _LoginPageState extends State<LoginPage> with TickerProviderStateMixin {
     }
 
     if (!email.contains("@") || !email.contains(".com")) {
-      _showDialog("Login Info", "Invalid Email Format");
+      _showDialog("Login Info", "Invalid Email Format!!");
       return;
     }
 
