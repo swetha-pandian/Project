@@ -12,7 +12,7 @@ class _MaroonPageState extends State<SplashScreen> {
   void initState() {
     super.initState();
 
-    // After 2 seconds, navigate to the login page
+    // Navigate after 3 seconds
     Future.delayed(const Duration(seconds: 3), () {
       Navigator.pushReplacement(
         context,
@@ -23,15 +23,23 @@ class _MaroonPageState extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      backgroundColor: Color(0xFF800000),
+    return Scaffold(
+      backgroundColor: const Color(0xFFBD2755),
       body: Center(
-        child: Text(
-          'LOGO',
-          style: TextStyle(
+        child: Container(
+          width: 297,
+          height: 297,
+          decoration: const BoxDecoration(
             color: Colors.white,
-            fontSize: 24,
-            fontWeight: FontWeight.bold,
+            shape: BoxShape.circle,
+          ),
+          child: Center(
+            child: Image.asset(
+              'assets/welcome.jpg', // replace with your actual logo path
+              width: 100,
+              height: 100,
+              fit: BoxFit.contain,
+            ),
           ),
         ),
       ),

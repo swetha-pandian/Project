@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: SplashScreen(), // Start with login page
+      home: Scaffold(backgroundColor: Colors.black45), // Start with login page
     );
   }
 }
