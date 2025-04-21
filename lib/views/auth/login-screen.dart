@@ -1,8 +1,7 @@
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:my_first_project/utility/utilities.dart';
 import 'package:my_first_project/views/home/home-screen.dart';
-import 'RegisterPage.dart'; // Make sure this file exists
+// Make sure this file exists
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
